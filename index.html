@@ -486,7 +486,6 @@
               type="email"
               name="subscribe-user-email"
               placeholder="E-mail"
-              id=""
             />
             <button class="button-all button-subscribe" type="submit">
               Подписаться
@@ -502,8 +501,8 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-text-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form name="modal-form-request" action="">
-          <label class="modal-label" for="">Имя</label>
+        <form name="modal-form-request">
+          <label class="modal-label">Имя</label>
           <span class="user-name-thumb">
             <input class="modal-input" type="text" name="user-name" />
             <svg class="icon-modal icon-person-modal">
@@ -511,7 +510,7 @@
             </svg>
           </span>
 
-          <label class="modal-label" for="">Телефон</label>
+          <label class="modal-label">Телефон</label>
           <span class="user-phone-thumb">
             <input class="modal-input" type="tel" name="user-phone" />
             <svg class="icon-modal icon-phone-modal">
@@ -519,7 +518,7 @@
             </svg>
           </span>
 
-          <label class="modal-label" for="">Почта</label>
+          <label class="modal-label">Почта</label>
           <span class="user-email-thumb">
             <input class="modal-input" type="email" name="user-email" />
             <svg class="icon-modal icon-email-modal">
@@ -527,12 +526,11 @@
             </svg>
           </span>
 
-          <label class="modal-label" for="">Комментарий</label>
+          <label class="modal-label">Комментарий</label>
           <textarea
             placeholder="Введите текст"
             class="modal-user-comments"
             name="user-comments"
-            id=""
           ></textarea>
 
           <input
