@@ -501,7 +501,51 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p></p>
+        <p class="modal-text-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form name="modal-form-request" action="">
+          <label class="modal-label" for="">Имя</label>
+          <span class="user-name-thumb">
+            <input class="modal-input" type="text" name="user-name" />
+            <svg class="icon-modal icon-person-modal">
+              <use href="./images/icons.svg#icon-person-modal"></use>
+            </svg>
+          </span>
+
+          <label class="modal-label" for="">Телефон</label>
+          <span class="user-phone-thumb">
+            <input class="modal-input" type="tel" name="user-phone" />
+            <svg class="icon-modal icon-phone-modal">
+              <use href="./images/icons.svg#icon-phone-modal"></use>
+            </svg>
+          </span>
+
+          <label class="modal-label" for="">Почта</label>
+          <span class="user-email-thumb">
+            <input class="modal-input" type="email" name="user-email" />
+            <svg class="icon-modal icon-email-modal">
+              <use href="./images/icons.svg#icon-email-modal"></use>
+            </svg>
+          </span>
+
+          <label class="modal-label" for="">Комментарий</label>
+          <textarea
+            placeholder="Введите текст"
+            class="modal-user-comments"
+            name="user-comments"
+            id=""
+          ></textarea>
+
+          <input
+            class="modal-form-checkbox"
+            type="checkbox"
+            name="user-policy"
+          />
+          <label class="user-agree-policy" for=""
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a></label
+          >
+          <button class="modal-form-button" type="submit">Отправить</button>
+        </form>
 
         <button class="modal-close" type="button" data-modal-close>
           <svg class="icon-close">
