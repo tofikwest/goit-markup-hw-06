@@ -536,12 +536,19 @@
           ></textarea>
 
           <input
-            class="modal-form-checkbox"
+            class="modal-form-checkbox visually-hidden"
             type="checkbox"
             name="user-policy"
+            id="user-policy"
           />
-          <label class="user-agree-policy" for=""
-            >Соглашаюсь с рассылкой и принимаю
+
+          <label class="user-agree-policy" for="user-policy">
+            <span class="check-wrap">
+              <svg class="icon-agree">
+                <use href="./images/icons.svg#icon-agree"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю
             <a href="">Условия договора</a></label
           >
           <button class="modal-form-button" type="submit">Отправить</button>
