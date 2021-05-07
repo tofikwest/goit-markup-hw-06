@@ -822,6 +822,7 @@ img {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
 
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -831,14 +832,19 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
 .backdrop.is-hidden .modal {
+  opacity: 1;
   transform: translate(-50%, -50%) scale(0.9);
 }
+
+
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
 
+  opacity: 1;
   max-width: 528px;
   min-height: 581px;
 
@@ -886,14 +892,11 @@ img {
 
   /* transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.user-name-thumb:hover .icon-modal,
-.user-phone-thumb:hover .icon-modal,
-.user-email-thumb:hover .icon-modal,
+
 .modal-input:focus + .icon-modal {
   fill: var(--accent-color);
 }
 
-.modal-input:hover,
 .modal-input:focus {
   outline: none;
   border: 1px solid #2196f3;
@@ -945,8 +948,9 @@ img {
 }
 
 .modal-form-checkbox:focus + .user-agree-policy .check-wrap {
-  box-shadow: 0 0 0 4px blue;
-  outline: none;
+  /* box-shadow: 0 0 0 4px #2196F3; */
+  /* outline: 1px solid #2196F3; */
+  outline: 3px solid black;
 }
 
 .user-agree-policy {
@@ -1029,6 +1033,9 @@ img {
   border-radius: 50%;
 
   cursor: pointer;
+
+  opacity: 1;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close .icon-close {
   position: absolute;
@@ -1045,9 +1052,11 @@ img {
   border-color: var(--accent-color);
 }
 
+
 .modal-close:hover .icon-close,
 .modal-close:focus .icon-close {
   fill: var(--accent-color);
+  
 }
 
 /* Страница Портфолио */
